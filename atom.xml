@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rue98.github.io</id>
     <title>rue</title>
-    <updated>2020-05-30T12:18:09.918Z</updated>
+    <updated>2020-05-30T12:19:11.197Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rue98.github.io"/>
     <link rel="self" href="https://rue98.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://rue98.github.io/images/avatar.png</logo>
     <icon>https://rue98.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, rue</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello Man]]></title>
+        <id>https://rue98.github.io/hello-man/</id>
+        <link href="https://rue98.github.io/hello-man/">
+        </link>
+        <updated>2020-05-30T12:18:52.000Z</updated>
+        <content type="html"><![CDATA[<p>Test #2.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
         <id>https://rue98.github.io/V2VWXMD9q/</id>
