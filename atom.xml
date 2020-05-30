@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rue.github.io</id>
     <title>rue</title>
-    <updated>2020-05-30T11:42:52.620Z</updated>
+    <updated>2020-05-30T11:43:42.048Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rue.github.io"/>
     <link rel="self" href="https://rue.github.io/atom.xml"/>
