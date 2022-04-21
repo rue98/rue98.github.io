@@ -1,196 +1,210 @@
-<!DOCTYPE html>
+
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>rue</title>
+<meta name="description" content="「木屋藏犬」">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://rue98.github.io/favicon.ico?v=1650513515482">
+<link rel="shortcut icon" href="https://rue98.github.io/favicon.ico?v=1650513714444">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://rue98.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="「木屋藏犬」">
-    
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://rue98.github.io">
-        <img src="https://rue98.github.io/images/avatar.png?v=1650513515482" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://rue98.github.io">
+        <img class="avatar" src="https://rue98.github.io/images/avatar.png?v=1650513714444" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://rue98.github.io">
         <h1 class="site-title">rue</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="https://rue98.github.io/" class="site-nav">
+          <a href="https://rue98.github.io/" class="menu purple-link">
             Home
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      「木屋藏犬」
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://rue98.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://rue98.github.io/00-test-text/">
-                  <h2 class="post-title">#00 - TEST TEXT</h2>
-                </a>
-                <div class="post-date">
-                  2022-04-21
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://rue98.github.io/05-ye-zhu-dui-dong-ao-guai-mai/">
-                  <h2 class="post-title">#06 - 「野猪队」、冬奥、拐卖</h2>
-                </a>
-                <div class="post-date">
-                  2022-02-23
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://rue98.github.io/05-xing-se-qing-zhi-pin-shen-mei-qi-shi/">
-                  <h2 class="post-title">#05 - 性、色情制品、审美、歧视</h2>
-                </a>
-                <div class="post-date">
-                  2022-01-18
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://rue98.github.io/04-gong-ke-nu-hai-de-bu-dao-xin-dong-offer/">
-                  <h2 class="post-title">#04 - 「工科女孩得不到心动offer」</h2>
-                </a>
-                <div class="post-date">
-                  2022-01-17
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://rue98.github.io/guan-yu-nei-juan/">
-                  <h2 class="post-title">#03 - 关于「内卷」</h2>
-                </a>
-                <div class="post-date">
-                  2020-09-29
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://rue98.github.io/dui-zuo-xue-zhu-zhi-yi-yi-de-yi-dian-xiang-fa/">
-                  <h2 class="post-title">#02 - 对「做学术」之意义的一点想法</h2>
-                </a>
-                <div class="post-date">
-                  2020-07-27
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://rue98.github.io/ye-tan-chi-hun-leng-jing-qi-dui-fan-dui-yi-jian-de-tan-tao/">
-                  <h2 class="post-title">#01 - 也谈离婚冷静期：对反对意见的探讨</h2>
-                </a>
-                <div class="post-date">
-                  2020-06-22
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-
-          <div class="pagination-container">
-  
-  
-</div>
-
-        </div>
+      <div class="content-container">
+        
+        
+<section class="post-item">
+    <div class="content">
+      <a href="https://rue98.github.io/00-test-text/">
+        <h2 class="post-title">#00 - TEST TEXT</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2022-04-21</span>
+        
       </div>
     </div>
+    
+  </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+<section class="post-item">
+    <div class="content">
+      <a href="https://rue98.github.io/05-ye-zhu-dui-dong-ao-guai-mai/">
+        <h2 class="post-title">#06 - 「野猪队」、冬奥、拐卖</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2022-02-23</span>
+        
+      </div>
+    </div>
+    
+  </section>
 
-AOS.init();
+<section class="post-item">
+    <div class="content">
+      <a href="https://rue98.github.io/05-xing-se-qing-zhi-pin-shen-mei-qi-shi/">
+        <h2 class="post-title">#05 - 性、色情制品、审美、歧视</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2022-01-18</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://rue98.github.io/04-gong-ke-nu-hai-de-bu-dao-xin-dong-offer/">
+        <h2 class="post-title">#04 - 「工科女孩得不到心动offer」</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2022-01-17</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://rue98.github.io/guan-yu-nei-juan/">
+        <h2 class="post-title">#03 - 关于「内卷」</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-09-29</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://rue98.github.io/dui-zuo-xue-zhu-zhi-yi-yi-de-yi-dian-xiang-fa/">
+        <h2 class="post-title">#02 - 对「做学术」之意义的一点想法</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-07-27</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://rue98.github.io/ye-tan-chi-hun-leng-jing-qi-dui-fan-dui-yi-jian-de-tan-tao/">
+        <h2 class="post-title">#01 - 也谈离婚冷静期：对反对意见的探讨</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2020-06-22</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+
+<div class="pagination-container">
+  
+  
+</div>
+
+
+      </div>
+
+      <div class="site-footer">
+  <div class="slogan">「木屋藏犬」</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://rue98.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -200,8 +214,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 

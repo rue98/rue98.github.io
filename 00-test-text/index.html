@@ -1,103 +1,74 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>#00 - TEST TEXT | rue</title>
+<meta name="description" content="「木屋藏犬」">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://rue98.github.io/favicon.ico?v=1650513515482">
+<link rel="shortcut icon" href="https://rue98.github.io/favicon.ico?v=1650513714444">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://rue98.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="
-
-
-
-
-写在前面的话
-
-每个人生来都不是平权主义者
-「问答式（Q&amp;A）」体例
-或许是自作多情的尝试
-
-
-事实：女性真的不平等吗？
-
-数据
-案例
-个人体验
-
-
-「挑起性别对立」？
-「在网上说有什么用」？
-3「与性别无关的事拿性别来说..." />
-    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://rue98.github.io">
-        <img src="https://rue98.github.io/images/avatar.png?v=1650513515482" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://rue98.github.io">
+        <img class="avatar" src="https://rue98.github.io/images/avatar.png?v=1650513714444" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://rue98.github.io">
         <h1 class="site-title">rue</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="https://rue98.github.io/" class="site-nav">
+          <a href="https://rue98.github.io/" class="menu purple-link">
             Home
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      「木屋藏犬」
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://rue98.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">#00 - TEST TEXT</h2>
-            <div class="post-date">2022-04-21</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">#00 - TEST TEXT</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2022-04-21</span>
             
-            <div class="post-content" v-pre>
-              <p><ul class="markdownIt-TOC">
+          </div>
+          <div class="post-content">
+            <p><ul class="markdownIt-TOC">
 <li>
 <ul>
 <li>
@@ -131,7 +102,7 @@
 </p>
 <blockquote>
 <p>不一定需要完全理性和冷静的语言。公共写作和学术写作毕竟还是存在区别的。这点自己从上野千鹤子的作品中受益良多：适当的个人风格并不会贬损作品的意义，反而会因为个人的「在场」而更感觉作品的说服力。也可以说是一种写作的艺术，情感和论理的适当调和。</p>
-<p>**公共写作的通俗性和可读性。**自己之前一直不是很注重「传播效果」，但现在感觉到，想要改变更多的观念，就需要自己的观点传达到更多人、被更多人理解。</p>
+<p><strong>公共写作的通俗性和可读性。</strong> 自己之前一直不是很注重「传播效果」，但现在感觉到，想要改变更多的观念，就需要自己的观点传达到更多人、被更多人理解。</p>
 <p>这可以找一些比较常见的对于女权主义（性别主义、女性主义）或善意或恶意的揣测，加以回应。也算是一种「科普」性质的写作，把自己过往的阅读添加进来。</p>
 </blockquote>
 <p><em>在前面加一些facts。包括统计数据、案例和个人体验：个人体验或许可以用访谈的形式来进行——简单搜集一点小时候体验过的内容或者是什么吧。facts其实是是争议当中一个巨大的问题，很多时候是在纠结“到底还存不存在对女性的压迫”——这个前见性的问题一定要解决。当发现实然上的不平等之后，在去解决这些“不同”是否是合理的、是否是需要改变的。</em></p>
@@ -186,31 +157,45 @@
 </ol>
 </section>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://rue98.github.io/05-ye-zhu-dui-dong-ao-guai-mai/">
-                  <h3 class="post-title">
-                    #06 - 「野猪队」、冬奥、拐卖
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://rue98.github.io/05-ye-zhu-dui-dong-ao-guai-mai/">
+              <h3 class="post-title">
+                下一篇：#06 - 「野猪队」、冬奥、拐卖
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">「木屋藏犬」</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://rue98.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -220,8 +205,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 
