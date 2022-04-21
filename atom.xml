@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rue98.github.io</id>
     <title>rue</title>
-    <updated>2022-04-21T03:56:32.981Z</updated>
+    <updated>2022-04-21T03:58:40.787Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rue98.github.io"/>
     <link rel="self" href="https://rue98.github.io/atom.xml"/>
@@ -16,7 +16,38 @@
         <link href="https://rue98.github.io/00-test-text/">
         </link>
         <updated>2022-04-21T03:55:30.000Z</updated>
-        <content type="html"><![CDATA[<p>[TOC]</p>
+        <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%E7%9A%84%E8%AF%9D">写在前面的话</a>
+<ul>
+<li><a href="#%E6%AF%8F%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%9D%A5%E9%83%BD%E4%B8%8D%E6%98%AF%E5%B9%B3%E6%9D%83%E4%B8%BB%E4%B9%89%E8%80%85">每个人生来都不是平权主义者</a></li>
+<li><a href="#%E9%97%AE%E7%AD%94%E5%BC%8Fqa%E4%BD%93%E4%BE%8B">「问答式（Q&amp;A）」体例</a></li>
+<li><a href="#%E6%88%96%E8%AE%B8%E6%98%AF%E8%87%AA%E4%BD%9C%E5%A4%9A%E6%83%85%E7%9A%84%E5%B0%9D%E8%AF%95">或许是自作多情的尝试</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8B%E5%AE%9E%E5%A5%B3%E6%80%A7%E7%9C%9F%E7%9A%84%E4%B8%8D%E5%B9%B3%E7%AD%89%E5%90%97">事实：女性真的不平等吗？</a>
+<ul>
+<li><a href="#%E6%95%B0%E6%8D%AE">数据</a></li>
+<li><a href="#%E6%A1%88%E4%BE%8B">案例</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E4%BD%93%E9%AA%8C">个人体验</a></li>
+</ul>
+</li>
+<li><a href="#%E6%8C%91%E8%B5%B7%E6%80%A7%E5%88%AB%E5%AF%B9%E7%AB%8B">「挑起性别对立」？</a></li>
+<li><a href="#%E5%9C%A8%E7%BD%91%E4%B8%8A%E8%AF%B4%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8">「在网上说有什么用」？</a></li>
+<li><a href="#3%E4%B8%8E%E6%80%A7%E5%88%AB%E6%97%A0%E5%85%B3%E7%9A%84%E4%BA%8B%E6%8B%BF%E6%80%A7%E5%88%AB%E6%9D%A5%E8%AF%B4">3「与性别无关的事拿性别来说」？</a></li>
+<li><a href="#4%E5%AE%8F%E5%A4%A7%E5%8F%99%E4%BA%8B%E4%B8%8B%E6%B2%A1%E6%9C%89%E4%B8%AA%E4%BA%BA%E6%89%80%E4%BB%A5%E5%A5%B3%E6%80%A7%E8%BF%98%E6%98%AF%E7%94%B7%E6%80%A7%E9%83%BD%E4%B8%8D%E9%87%8D%E8%A6%81">4「宏大叙事下没有个人，所以女性还是男性都不重要」？</a></li>
+<li><a href="#5%E5%9C%A8%E6%AD%8C%E9%A2%82%E6%AF%8D%E4%BA%B2%E7%9A%84%E5%9C%B0%E6%96%B9%E9%97%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B2%A1%E6%9C%89%E7%94%B7%E6%80%A7">5「在歌颂母亲的地方问为什么没有男性」？</a></li>
+<li><a href="#6%E5%A5%B3%E6%80%A7%E6%89%BF%E6%8B%85%E5%AE%B6%E5%8A%A1%E6%98%AF%E4%B8%8D%E5%B9%B3%E7%AD%89%E5%90%97">6「女性承担家务是不平等吗」？</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">参考文献</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
 <blockquote>
 <p>不一定需要完全理性和冷静的语言。公共写作和学术写作毕竟还是存在区别的。这点自己从上野千鹤子的作品中受益良多：适当的个人风格并不会贬损作品的意义，反而会因为个人的「在场」而更感觉作品的说服力。也可以说是一种写作的艺术，情感和论理的适当调和。</p>
 <p>**公共写作的通俗性和可读性。**自己之前一直不是很注重「传播效果」，但现在感觉到，想要改变更多的观念，就需要自己的观点传达到更多人、被更多人理解。</p>
