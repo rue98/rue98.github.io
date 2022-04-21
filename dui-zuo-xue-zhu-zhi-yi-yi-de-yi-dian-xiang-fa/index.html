@@ -1,74 +1,86 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>#02 - 对「做学术」之意义的一点想法 | rue</title>
-<meta name="description" content="「木屋藏犬」">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://rue98.github.io/favicon.ico?v=1649905596700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://rue98.github.io/favicon.ico?v=1650513352440">
 <link rel="stylesheet" href="https://rue98.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="
+最初写于二零二零年五月二十一日。
+
+说是「想法」，其实是自己内心的一些纠结和矛盾之处——也可以说，矛盾和纠结引发了自己更多的思考。究竟应该如何去做？
+在实习的过程中，真切地对于「谁在使用法律」有了一种很感性的认识；从案卷之中，也是真切地感..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://rue98.github.io">
-        <img class="avatar" src="https://rue98.github.io/images/avatar.png?v=1649905596700" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://rue98.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://rue98.github.io">
+        <img src="https://rue98.github.io/images/avatar.png?v=1650513352440" class="site-logo">
         <h1 class="site-title">rue</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="https://rue98.github.io/" class="menu purple-link">
+          <a href="https://rue98.github.io/" class="site-nav">
             Home
           </a>
         
       
     </div>
   </div>
-</transition>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      「木屋藏犬」
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://rue98.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">#02 - 对「做学术」之意义的一点想法</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-07-27</span>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">#02 - 对「做学术」之意义的一点想法</h2>
+            <div class="post-date">2020-07-27</div>
             
-          </div>
-          <div class="post-content">
-            <blockquote>
+            <div class="post-content" v-pre>
+              <blockquote>
 <p>最初写于二零二零年五月二十一日。</p>
 </blockquote>
 <p>说是「想法」，其实是自己内心的一些纠结和矛盾之处——也可以说，矛盾和纠结引发了自己更多的思考。究竟应该如何去做？</p>
@@ -84,45 +96,31 @@
 <p>而对于现实的关切，理论界和实务界的恰当连接，则应当是方法论层面的思考——如王泽鉴所说，阅读判决是日课。</p>
 <p>方法论的选择，决定了你从何处切入法律世界：你如何迅速地找到一个时常被冲撞的、亟待修补的点位？更多的是一种「有效性」的问题。它本质上并没有背离「修补」的工作目的，而是决定了你如何找到需要修补的点——如何有效地找到一个有意义的点位。</p>
 
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://rue98.github.io/ye-tan-chi-hun-leng-jing-qi-dui-fan-dui-yi-jian-de-tan-tao/">
+                  <h3 class="post-title">
+                    #01 - 也谈离婚冷静期：对反对意见的探讨
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://rue98.github.io/ye-tan-chi-hun-leng-jing-qi-dui-fan-dui-yi-jian-de-tan-tao/">
-              <h3 class="post-title">
-                下一篇：#01 - 也谈离婚冷静期：对反对意见的探讨
-              </h3>
-            </a>
-          </div>
-          
       </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">「木屋藏犬」</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://rue98.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -132,6 +130,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 

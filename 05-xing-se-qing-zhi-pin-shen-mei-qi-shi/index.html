@@ -1,74 +1,87 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>#05 - 性、色情制品、审美、歧视 | rue</title>
-<meta name="description" content="「木屋藏犬」">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://rue98.github.io/favicon.ico?v=1649905596700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://rue98.github.io/favicon.ico?v=1650513352440">
 <link rel="stylesheet" href="https://rue98.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="
+二零二二年一月十八日，草稿。
+
+读到推送「我不想变胖，也不想成为你们眼中“身材好的性对象”」，是一个很纠结的话题。能想到下面的这些内容：
+
+色情制品和女性成为「性对象」之间的关联如何？ 女性在以异性恋男性为预设对象的色情制品中出现，是否就..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://rue98.github.io">
-        <img class="avatar" src="https://rue98.github.io/images/avatar.png?v=1649905596700" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://rue98.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://rue98.github.io">
+        <img src="https://rue98.github.io/images/avatar.png?v=1650513352440" class="site-logo">
         <h1 class="site-title">rue</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="https://rue98.github.io/" class="menu purple-link">
+          <a href="https://rue98.github.io/" class="site-nav">
             Home
           </a>
         
       
     </div>
   </div>
-</transition>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      「木屋藏犬」
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://rue98.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">#05 - 性、色情制品、审美、歧视</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2022-01-18</span>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">#05 - 性、色情制品、审美、歧视</h2>
+            <div class="post-date">2022-01-18</div>
             
-          </div>
-          <div class="post-content">
-            <blockquote>
+            <div class="post-content" v-pre>
+              <blockquote>
 <p>二零二二年一月十八日，草稿。</p>
 </blockquote>
 <p>读到推送<a href="https://mp.weixin.qq.com/s?__biz=MjM5NTc1NjYyMA==&amp;mid=2651903080&amp;idx=2&amp;sn=210b9726395b786495c7dc7907774b55&amp;chksm=bd17db4b8a60525d727700fbc8c0d4e582084d69ab73727127a2469ebf76e497acf17dbdaad3&amp;mpshare=1&amp;scene=1&amp;srcid=0118DPkmjuOFGkyQrP93j9Ny&amp;sharer_sharetime=1642492733743&amp;sharer_shareid=6a0df70d35e617c10dd636f1437c1beb#rd">「我不想变胖，也不想成为你们眼中“身材好的性对象”」</a>，是一个很纠结的话题。能想到下面的这些内容：</p>
@@ -87,45 +100,31 @@
 <p>回到审美和歧视之间的关系，小水在<a href="https://mp.weixin.qq.com/s/5WLl15myNZtG6C1T4z9xsw">「我们应该如何面对歧视？」</a>对于如何回应歧视给出了答案，也谈到了看似反歧视的观点如何强化歧视的问题。</p>
 <p>或许可以进一步去考察的是，<strong>审美是否是纯粹个人化的？</strong> 审美、评价和歧视是什么关联？「在心中认为丑但没有表达」、「表达我认为特定事物丑的观点」、「表达我认为某一类事物丑的观点」，三者之间的差异何在？未被表达的在伦理上、道德上就是可以接受的吗——提出这个问题的时候，浮现出来的是对「思想审查」危险的恐惧，如果过度否认审美的个人性，似乎又有过大程度限缩自由的危险。有意思，似乎不断推进「包容一切」的论点，反而会走到另外一极，过度扩张了「被审视方」的自由？</p>
 
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://rue98.github.io/04-gong-ke-nu-hai-de-bu-dao-xin-dong-offer/">
+                  <h3 class="post-title">
+                    #04 - 「工科女孩得不到心动offer」
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://rue98.github.io/04-gong-ke-nu-hai-de-bu-dao-xin-dong-offer/">
-              <h3 class="post-title">
-                下一篇：#04 - 「工科女孩得不到心动offer」
-              </h3>
-            </a>
-          </div>
-          
       </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">「木屋藏犬」</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://rue98.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -135,6 +134,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 
